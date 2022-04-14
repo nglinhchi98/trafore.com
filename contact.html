@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="contactstyle.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Contact information</title>
+    </head>
+    <body>
+        <header id="navigation">
+            <nav id="header">
+                <a href="index.html"><img src="trafore-logo.png" alt="logotrafore" class="logo-img"></a>
+                <div class="nav-lang">
+                    <ul class="nav-links">
+                        <li><a href="#header">News</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a class="services">IT-Services</a>
+                            <ul class="dropdown">
+                                <li><a href="">Babe Fertility Software</a></li>
+                                <li><a href="https://apps.trafore.com/exim2/mainpage" target="_blank">Exim</a></li>
+                                <li><a href="https://us.4d.com/why-4d" target="_blank">4D Web Development</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <ul class="lang">
+                                <li><a href="#" class="suomi">FI</a></li>
+                                <li><a href="#" class="eng">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--hamburger menu-->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+
+                </div>
+                <!-- <div>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <div id="searchOutput"></div>
+                </div> -->
+            </nav>
+        </header>
+    
+    <!-- contact form -->
+    <div class="section">
+        <div class="wrapper">
+            <div class="row">
+                <div class="col1">
+                    <div class="exim-ukko">
+                        <img src="exim_smile.gif" alt="exim-image" class="exim-ukko">
+                    </div>
+                </div>
+                <div class="col2"></div>
+                <div class="col3">
+                    <div class="contact-form">
+                        <div class="margin-bottom">
+                            <h2 class="heading-2">Send us a message</h2>
+                        </div>
+                        <div class="form">
+                            <form action="" name="contact-form" data="Contact Form" method="get" class="form-2" aria-label="Contact Form" id="contact-form">
+                                <input type="text" class="form-field" maxlength="256" name="Name" data-name="Name" placeholder="Name" id="name" required>
+                                <input type="email" class="form-field" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="email"  required>
+                                <input type="text" class="form-field" maxlength="256" name="Company" data-name="Company" placeholder="Organisation" id="company" required>
+                                <input type="text" class="form-field" maxlength="256" name="Role" data-name="Role" placeholder="Your position" id="role" required>
+                                <input type="text" class="form-field" maxlength="256" name="How-did-you-hear-about-Trafore" data-name="How did you hear about Trafore" placeholder="How did you hear about Trafore?" id="howyouhear">
+                                <textarea class="form-field" placeholder="Your message" maxlength="5000" id="message" required></textarea></div>
+                            </form>
+                            <button value="Send Message" class="submit-button" onclick="submitForm()">Send Message</button>
+                            <div class="success" id="success">Your message has been sent succesfully!</div>
+                            <div class="fail" id="fail">Please fill in required fields</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer starts here-->
+    <footer>
+        <section id="footer">
+            <div class="footer-row">
+            <div class="column1">
+                <img src="trafore-logo.png" alt="trafore_logo">
+                <p>ville.ranta@trafore.fi <br>
+                    Arkadiankatu 7, 00110 Helsinki, Finland <br>
+                    Y-tunnus: 2143316-3
+                </p>
+                <a href="#" class="fa fa-facebook"target="_blank"></a>
+                <a href="https://www.linkedin.com/company/trafore-oy" class="fa fa-linkedin" target="_blank"></a>
+                <a href="mailto:ville.ranta@trafore.fi" class="fa fa-envelope"></a>
+
+            </div>
+
+            <div class="column2">
+                <ul class="col-company">
+                    <li class="column-title">Tietoa sivustosta</li>
+                    <li><a href="">Rekisteriseloste</a></li>
+                    <li><a href="">Tietosuojaseloste</a></li>
+                    <li><a href="">Käyttöehdot</a></li>
+                    <li><a href="">Evästeet</a></li>
+                </ul>
+            </div>
+
+            <div class="column3">
+                <ul class="col-service">
+                    <li class="column-title">IT-Services</li>
+                    <li class="col-links"><a href="#">Babe Fertility Software</a></li>
+                    <li class="col-links"><a href="https://apps.trafore.com/exim2/mainpage" target="_blank">Exim</a></li>
+                    <li class="col-links"><a href="https://us.4d.com/why-4d" target="_blank">4D Web Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="line-div"></div>
+            <div><p class="copyright"><em>@Trafore Oy 2022. All rights reserved.</em></p></div>
+        </div>
+        </section>
+        </footer>
+        <script src="homepage.js"></script>
+        <script src="contact.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
+</html>

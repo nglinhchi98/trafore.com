@@ -1,0 +1,95 @@
+/*Contact page style*/
+body{
+    background: url("https://img.freepik.com/free-vector/abstract-polygonal-background-with-connected-lines-dots-minimalistic-geometric-pattern-molecule-structure-communication-graphic-plexus-background-science-medicine-technology-concept_230610-1030.jpg") no-repeat;
+    background-size: cover ;
+}
+.form-field{
+    display: block;
+    width: calc(100% - 15px);
+    height: 30px;
+    margin-top: 10px;
+    padding: 6px;
+    padding-left: 15px;
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    
+}
+
+.form-field::placeholder{
+    font-size: 13px;
+}
+
+
+textarea{
+    min-height: 60px;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.row{
+    display: flex;
+    padding: 150px 0 50px;
+    justify-content: center;
+}
+
+.exim-ukko{
+    width: 100%;
+    height: auto;
+}
+
+.col1{
+    margin-left: 10px;
+}
+@media (max-width: 767px){
+    .col1, .col2{
+        display: none;
+    }
+    .row{
+        padding-top: 100px;
+    }
+
+}
+.col2{
+    width: 3vw;
+}
+.contact-form{
+    padding: 30px;
+}
+.col3{
+    background-color: rgb(210, 210, 210);
+    margin: 30px;
+    margin-top: 70px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.success, .fail{
+    font-style: italic;
+    display: none;
+    padding-top: 7px;
+    transition: .2s;
+    animation: buttonclick .2s linear; 
+    position: absolute;
+}
+
+.success{
+    color: green;
+}
+.fail {
+    color: red;
+}
+
+@keyframes buttonclick {
+    0%{
+        transform: scale(0.1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
