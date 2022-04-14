@@ -17,7 +17,6 @@ function submitForm(){
             Company.value = '';
             Role.value = '';
             msg.value = '';
-            Trafore.value ='';
         }, 1000)
         success.style.display = 'block'}
     //remove the alert after submitting for 4 secs

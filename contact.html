@@ -14,7 +14,7 @@
     <body>
         <header id="navigation">
             <nav id="header">
-                <a href="index.html"><img src="trafore-logo.png" alt="logotrafore" class="logo-img"></a>
+                <a href="index.html"><img src="images/trafore-logo.png" alt="logotrafore" class="logo-img"></a>
                 <div class="nav-lang">
                     <ul class="nav-links">
                         <li><a href="#header">News</a></li>
@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col1">
                     <div class="exim-ukko">
-                        <img src="exim_smile.gif" alt="exim-image" class="exim-ukko">
+                        <img src="images/exim_smile.gif" alt="exim-image" class="exim-ukko">
                     </div>
                 </div>
                 <div class="col2"></div>
@@ -65,13 +65,14 @@
                             <h2 class="heading-2">Send us a message</h2>
                         </div>
                         <div class="form">
-                            <form action="" name="contact-form" data="Contact Form" method="get" class="form-2" aria-label="Contact Form" id="contact-form">
-                                <input type="text" class="form-field" maxlength="256" name="Name" data-name="Name" placeholder="Name" id="name" required>
-                                <input type="email" class="form-field" maxlength="256" name="Email" data-name="Email" placeholder="Email" id="email"  required>
-                                <input type="text" class="form-field" maxlength="256" name="Company" data-name="Company" placeholder="Organisation" id="company" required>
-                                <input type="text" class="form-field" maxlength="256" name="Role" data-name="Role" placeholder="Your position" id="role" required>
+                            <form name="contact-form" data="Contact Form" method="POST" class="form-2" aria-label="Contact Form" id="contact-form">
+                                <input type="text" class="form-field" maxlength="256" name="Name" data-name="Name" placeholder="Name*" id="name" required>
+                                <input type="email" class="form-field" maxlength="256" name="Email" data-name="Email" placeholder="Email*" id="email"  required>
+                                <input type="text" class="form-field" maxlength="256" name="Company" data-name="Company" placeholder="Organisation*" id="company" required>
+                                <input type="text" class="form-field" maxlength="256" name="Role" data-name="Role" placeholder="Your position*" id="role" required>
                                 <input type="text" class="form-field" maxlength="256" name="How-did-you-hear-about-Trafore" data-name="How did you hear about Trafore" placeholder="How did you hear about Trafore?" id="howyouhear">
-                                <textarea class="form-field" placeholder="Your message" maxlength="5000" id="message" required></textarea></div>
+                                <textarea class="form-field" placeholder="Your message*" maxlength="5000" id="message" required></textarea>
+                                <p style="color: red; font-style: italic; font-size: 11px;">* required fields</p>
                             </form>
                             <button value="Send Message" class="submit-button" onclick="submitForm()">Send Message</button>
                             <div class="success" id="success">Your message has been sent succesfully!</div>
@@ -88,7 +89,7 @@
         <section id="footer">
             <div class="footer-row">
             <div class="column1">
-                <img src="trafore-logo.png" alt="trafore_logo">
+                <img src="images/trafore-logo.png" alt="trafore_logo">
                 <p>ville.ranta@trafore.fi <br>
                     Arkadiankatu 7, 00110 Helsinki, Finland <br>
                     Y-tunnus: 2143316-3

@@ -1,7 +1,8 @@
 /*Contact page style*/
-body{
-    background: url("https://img.freepik.com/free-vector/abstract-polygonal-background-with-connected-lines-dots-minimalistic-geometric-pattern-molecule-structure-communication-graphic-plexus-background-science-medicine-technology-concept_230610-1030.jpg") no-repeat;
-    background-size: cover ;
+.section{
+    background-image: url("images/contactbackground.jpeg");
+    background-position: center;
+    background-size: cover;
 }
 .form-field{
     display: block;
@@ -73,6 +74,7 @@ textarea{
     transition: .2s;
     animation: buttonclick .2s linear; 
     position: absolute;
+    font-size: 12px;
 }
 
 .success{
