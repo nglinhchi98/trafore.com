@@ -1,0 +1,52 @@
+h1 {
+    font-size: 32px;
+    padding: 5px 0;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 12px 0;
+}
+h3 {
+    font-size: 20px; 
+    padding-left: 3px;
+}
+
+p{
+    font-size: 15px;
+    word-spacing: 2px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(63, 125, 110);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header {
+    padding-top: 48px;
+}
+
+main {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+ol {
+    padding-left: 20px;
+    padding-right: 15px;
+}
+ol li {
+    font-size: 15px;
+    word-spacing: 1.5px;
+    line-height: 23px;
+    text-align: justify;
+    list-style: decimal;
+}

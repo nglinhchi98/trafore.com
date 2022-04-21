@@ -1,15 +1,15 @@
 /*Contact page style*/
 .section{
-    background-image: url("images/contactbackground.jpeg");
+    background-image: url("images/contact_background.jpeg");
     background-position: center;
     background-size: cover;
 }
 .form-field{
     display: block;
     width: calc(100% - 15px);
-    height: 30px;
-    margin-top: 10px;
-    padding: 6px;
+    height: 32px;
+    margin-top: 15px;
+    padding: 8px;
     padding-left: 15px;
     justify-content: center;
     border: none;
@@ -26,6 +26,7 @@ textarea{
     min-height: 60px;
     font-family: inherit;
     resize: vertical;
+    max-height: 300px;
     margin-bottom: 15px;
 }
 
