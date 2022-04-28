@@ -47,16 +47,21 @@ nav{
     padding: 10px;
 }
 .logo{
-    height: 55px;
-    width: 120px;
+    height: auto;
+    width: 160px;
     margin-top: 20px;
     position: relative;
 }
-nav ul{
+.navigation{
     display: flex;
-    gap: 30px;
-    list-style-type: none;
+    gap: 50px;
     justify-content: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin-top: 38px;
 }
 nav a{
     padding: 6px;
@@ -68,12 +73,14 @@ nav a:hover{
 /*header starts here*/
 #container {
     box-shadow: 10px 5px 5px rgb(187, 187, 187);
-    height: 500px;
-    background: url("https://images.unsplash.com/photo-1585010873004-923f9a54e54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=4016&q=80");
+    height: 600px;
+    background: url("https://media.istockphoto.com/photos/artificial-insemination-picture-id868254530?s=2048x2048");
     background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 header {
-    width: 70vw;
+    max-width: 800px;
     line-height: 40px;
     margin: 10px auto;
     padding-top: 170px;

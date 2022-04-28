@@ -58,7 +58,8 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    vertical-align: middle;
+    object-fit: cover;
+    object-position: center;
 }
 .our-team{
     padding: 30px;
