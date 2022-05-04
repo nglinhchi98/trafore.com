@@ -64,14 +64,42 @@ nav {
     gap: 5px;
     font-size: 15px;
 }
-/*hover It-palvelut*/
+/* button It-services*/
+.services {
+    background-color: white;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}
+.services::after {
+    content: '\25be';
+    padding-left: 4px;
+    transform: scale(1.2);
+}
+.services--active {
+    color: rgb(0, 107, 82);
+    background-color: white;
+    font-size: inherit;
+    border: none;
+}
+.services--active::after {
+    content: '\25b4';
+    padding-left: 4px;
+    transform: scale(1.2);
+}
+/*the dropdown menu of IT services*/
+.dropdown {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s;
+}
 .dropdown li{
     position: relative;
     top: 0px;
     left: -75px;
     width: 200px;
     padding: 0;
-    display: none;
     background-color: white;
     line-height: 50px;
     float: left;
@@ -84,7 +112,7 @@ nav {
     background-color: rgb(83, 204, 176);
 }
 
-.nav-links li:hover > .dropdown li{
+/*.nav-links li:hover > .dropdown li{
     display: block;
     
 }
@@ -115,7 +143,23 @@ nav {
         opacity: 1;
 
     }
-}
+}*/
+
+@media (max-width: 960px) {
+    .nav-links li:hover {
+        animation: none;
+    }
+    /* Expanding submenu in IT services by clicking*/
+    .dropdown{
+        display: block;
+        margin-left: 40px;
+        position: relative;
+    }
+    .dropdown li {
+        display: block;
+    }
+    }
+
 /*language style*/
 .nav-lang{
     display: flex;
@@ -152,6 +196,7 @@ li {
     z-index: -2;
     font-size: 12px;
 }
+
 }
 
 /*hamburger menu*/
@@ -172,8 +217,7 @@ li {
 
 @media (max-width: 960px){
     .hamburger{
-        display: block;
-        
+        display: block;   
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -221,10 +265,6 @@ li {
 
     nav.active {
         height: max-content;
-    }
-
-    .dropdown{
-        display: none;
     }
 }
 
