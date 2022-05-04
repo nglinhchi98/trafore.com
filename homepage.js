@@ -10,3 +10,17 @@ document.querySelectorAll(".nav-links a").forEach(n => n. addEventListener("clic
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+document.querySelectorAll(".services").forEach(button => { 
+    button. addEventListener("click" , () => {
+    const dropdown = button.nextElementSibling;
+
+    button.classList.toggle('services--active');
+
+    if (button.classList.contains('services--active')) {
+        dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+    } else {
+        dropdown.style.maxHeight = 0;
+    };
+    });
+});
