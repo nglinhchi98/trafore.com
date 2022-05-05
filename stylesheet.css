@@ -110,7 +110,6 @@ nav {
     position: relative;
     top: 0px;
     left: -75px;
-    width: 100px;
     padding: 0;
     background-color: white;
     line-height: 50px;
@@ -122,22 +121,25 @@ nav {
     
 }
 @media (max-width: 960px) {
-.dropdown li a {
-    
-}
 .dropdown li:hover {
-    background-color: rgb(83, 204, 176);
+    color: rgb(83, 204, 176);
 }
 .dropdown li {
-    padding: 5px 3px;
     width: fit-content;
-    padding-left: 30px;
+    padding: 0;
+    left: 0;
+}
+.dropdown li a {
+    margin-left: 0;
 }
 .dropdown {
+    padding-left: 0;
     height: 50px;
+    width: 100vw;
+    overflow: visible;
 }
-.contact-link--active {
-    margin-top: 30px;
+#vertical-list {
+    height: 95px;
 }
 }
 
@@ -246,7 +248,7 @@ li {
 
     nav.active {
         height: max-content;
-    }
+    }  
 }
 
 /*headline style*/

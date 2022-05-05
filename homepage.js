@@ -6,7 +6,7 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll(".services").forEach( button => button. addEventListener("click", () => {
+document.querySelectorAll(".navlinks").forEach( button => button. addEventListener("click", () => {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
