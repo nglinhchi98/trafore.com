@@ -8,8 +8,19 @@ hamburger.addEventListener("click", () => {
 
 document.querySelectorAll(".services").forEach( button => button. addEventListener("click", () => {
     hamburger.classList.remove("active");
-//  navMenu.classList.remove("active");
+    navMenu.classList.remove("active");
 }))
 
-('nav ul li .service').click(function(){
-('nav ul li .service span').toggleClass("rotate");})
+document.querySelectorAll(".services").forEach(button => { 
+    button. addEventListener("click" , () => {
+    const dropdown = button.nextElementSibling;
+
+    button.classList.toggle('services--active');
+
+    if (button.classList.contains('services--active')) {
+        dropdown.style.maxHeight = dropdown.scrollHeight + 'px';
+    } else {
+        dropdown.style.maxHeight = 0;
+    };
+    });
+});
