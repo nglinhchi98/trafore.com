@@ -6,7 +6,10 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 })
 
-document.querySelectorAll(".nav-links a").forEach(n => n. addEventListener("click", () => {
+document.querySelectorAll(".services").forEach( button => button. addEventListener("click", () => {
     hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+//  navMenu.classList.remove("active");
 }))
+
+('nav ul li .service').click(function(){
+('nav ul li .service span').toggleClass("rotate");})
