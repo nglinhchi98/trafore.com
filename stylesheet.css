@@ -269,6 +269,8 @@ li {
 .headline h1{
     font-size: 35px;
     padding-top: 37vh;
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgb(0, 107, 82);
 }
 @media (max-width: 425px) {
@@ -446,9 +448,7 @@ button:hover span:after {
 #products p{
     font-size: 14px;
 }
-.babe-img img{
-    padding : 21px;
-}
+
 @media (max-width: 640px){
 #exim, #babe, #webdev{
         display: block;
@@ -460,9 +460,7 @@ button:hover span:after {
 .babe-btn{
     float: none;
 }
-.webdev-img, .exim-img{
-    margin-top: 10px;
-}
+.webdev-img {margin-top: 10px;}
 .exim-txt, .babe-txt, .webdev-txt{
     margin: 0 auto;
 }
