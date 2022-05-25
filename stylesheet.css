@@ -461,6 +461,9 @@ button:hover span:after {
     float: none;
 }
 .webdev-img {margin-top: 10px;}
+.babe-img img {
+    padding: 17px;
+}
 .exim-txt, .babe-txt, .webdev-txt{
     margin: 0 auto;
 }
