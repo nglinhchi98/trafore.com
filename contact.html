@@ -67,7 +67,7 @@
                             <h2 class="heading-2">Send us a message</h2>
                         </div>
                         <div class="form">
-                            <form name="contact-form" data="Contact Form" method="POST" class="form-2" aria-label="Contact Form" id="contact-form">
+                            <form action="https://exim.trafore.com/exim2/contact_us.php" method="POST" name="contact-form" data="Contact Form" class="form-2" aria-label="Contact Form" id="contact-form">
                                 <input type="text" class="form-field" maxlength="256" name="Name" data-name="Name" placeholder="Name*" id="name" required>
                                 <input type="email" class="form-field" maxlength="256" name="Email" data-name="Email" placeholder="Email*" id="email"  required>
                                 <input type="text" class="form-field" maxlength="256" name="Company" data-name="Company" placeholder="Organisation*" id="company" required>
@@ -76,7 +76,7 @@
                                 <textarea class="form-field" placeholder="Your message*" maxlength="5000" id="message" required></textarea>
                                 <p style="color: red; font-style: italic; font-size: 11px;">* required fields</p>
                             </form>
-                            <button action="https://exim.trafore.com/exim2/contact_us.php" value="Send Message" class="submit-button" onclick="submitForm()">Send Message</button>
+                            <button value="Send Message" class="submit-button">Send Message</button>
                             <div class="success" id="success">Your message has been sent succesfully!</div>
                             <div class="fail" id="fail">Please fill in required fields</div>
                         </div>
