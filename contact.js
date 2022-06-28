@@ -25,7 +25,7 @@ function submitForm(){
         success.style.display = 'none';
     }, 4000);
 
-    Email.setAttributeNode({
+    /*Email.setAttributeNode({
         Host: "smtp.gmail.com",
         Username: "nglinhchi65@gmail.com",
         Password: "So6tayho",
@@ -33,5 +33,5 @@ function submitForm(){
         From: document.getElementById("email").value,
         Subject: "New Message from Website",
         Body: "Name: " + Name +"<br>" + "Email: " + Email + "<br>" + msg,
-    });
+    });*/
 }
