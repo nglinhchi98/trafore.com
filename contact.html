@@ -75,6 +75,17 @@
                                 <input type="text" class="form-field" maxlength="256" name="How-did-you-hear-about-Trafore" data-name="How did you hear about Trafore" placeholder="How did you hear about Trafore?" id="howyouhear">
                                 <textarea class="form-field" placeholder="Your message*" maxlength="5000" id="message" required></textarea>
                                 <p style="color: red; font-style: italic; font-size: 11px;">* required fields</p>
+
+                                <div
+                                    class="g-recaptcha"
+                                    data-sitekey="6LeyVqwgAAAAACzoWjedkTD1koLxKqaCT8At2LCp"                                   
+                                    data-callback="onRecaptchaSuccess"
+                                    data-expired-callback="onRecaptchaResponseExpiry"
+                                    data-error-callback="onRecaptchaError"
+                                    >
+                                    </div>
+
+                                
                                 <button value="Send Message" class="submit-button">Send Message</button>
                             </form>
                             <div class="success" id="success">Your message has been sent succesfully!</div>
@@ -129,5 +140,6 @@
         <script src="homepage.js"></script>
         <script src="contact.js"></script>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </body>
 </html>
